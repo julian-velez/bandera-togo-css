@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+}
+
+
+.flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #006A4E; /* Verde */
+    display: flex;
+    flex-direction: row;
+}
+.stripes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.stripe {
+    flex: 1;
+    width: 100%;
+}
+.stripe:nth-child(1) { background-color: #006A4E; } /* Amarillo */
+.stripe:nth-child(2) { background-color: #FFCE00; } /* Verde */
+.stripe:nth-child(3) { background-color: #006A4E; } /* Amarillo */
+.stripe:nth-child(4) { background-color: #FFCE00; } /* Verde */
+.stripe:nth-child(5) { background-color: #006A4E; } /* Amarillo */
+
+.red-square {
+    width: 40%;
+    height: 60%;
+    background-color: #D21034; /* Rojo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF; /* Blanco */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
